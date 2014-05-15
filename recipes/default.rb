@@ -13,7 +13,7 @@ if ['app_master', 'app', 'solo'].include?(node[:instance_role])
       variables({
         :environment => node['environment']['framework_env'],
         :adapter => 'mysql2',
-        :database => node['engineyard']['environment'].first['database_name'],
+        :database => node['engineyard']['environment']['apps'].first['database_name'],
         :username => node['owner_name'],
         :password => node['owner_pass'],
         :host => node['db_host']
