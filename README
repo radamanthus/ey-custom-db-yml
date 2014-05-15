@@ -1,0 +1,3 @@
+A custom chef recipe for customizing database.yml in the Engine Yard platform.
+
+Note: This assumes that the database uses the mysql2 gem
